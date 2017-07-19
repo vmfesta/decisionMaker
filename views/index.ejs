@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home Page</title>
-
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
-    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <title>Create a New Poll</title>
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+  <main class="container">
+    <div class= "form-group">
+    <form action="/" method="POST">
+      <input name="title" type="text" placeholder="Enter Title ">
+      <input name="option" type= "text" placeholder="Enter choices">
+      <input name="description" type= "text" placeholder="Enter a description for your choices">
+      <input name="email" type="email" placeholder="Enter email here">
+      <button class="btn btn-default"" type="submit">Submit</button>
+    </form>
+    </div>
+  </main>
   </body>
 </html>
