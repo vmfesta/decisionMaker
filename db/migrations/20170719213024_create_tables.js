@@ -7,6 +7,7 @@ exports.up = function(knex, Promise) {
       table.string("adm_link");
       table.string("sub_link");
       table.string("result_link");
+      table.string("creator_email");
     }),
     knex.schema.createTable("pool", function(table) {
       table.increments();
