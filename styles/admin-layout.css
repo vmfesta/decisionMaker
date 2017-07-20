@@ -1,4 +1,4 @@
-/* main layout */
+  /* main layout */
 html {
   box-sizing: border-box;
 }
@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   color: #244751;
-  background-color: #eee;  /* #eee */
+  background-color: aliceblue;  /* #eee */
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -53,78 +53,126 @@ main {
 
 /* new polls css */
 
-article.container{
-
+div.container{
+    position: relative;
+    left: 0em;
+    padding: 300px;
 }
 
 article.Poll-container {
-  border: 2px gray solid;
+    padding-top: 10px;
+    width: 100%;
+    background: #fff;
+    font-size: 13px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    min-height: 350px;
+    border: 1px solid gray;
+    clear: both;
+  /*border: 2px gray solid;
   border-radius: 7px;
   top: 10px;
   margin: 10px 0;
-  padding: 100px;
+  padding: 100px;*/
 }
 
 
 header.Poll h3 {
   margin: 0;
   float: left;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: xx-large;
+  text-align: center
+  color: #385473;
 
 }
 
 span.Poll-descrip h6{
   padding-top: 150px;
   margin: 0;
+  font-size: large;
+  padding-left: 30px;
+  color: #385473;
 }
 
-ul.poll-list li.item1{
+ul.poll-list li.item{
 
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 20px;
-}
-ul.poll-list li.item2{
+  font-size: large;
+  color: #385473;
 
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-}
-ul.poll-list li.item3{
-
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
 }
 
-form.form-content textarea.item-title{
-  display: block;
-  width: 100%;
+form.item textarea.item-title{
+  margin: 0px;
+  width: 550px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 7px;
+
 }
 
-form.form-content textarea.item-decrip{
-  display: block;
-  width: 100%;
+form#form-content{
+  padding: 0px 40px 40px 40px;
 }
 
-article.Poll-container button.create-new {
+form#form-content textarea.item-title{
+  margin: 0px;
+  width: 550px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 7px;
+
+}
+
+ul.poll-list button.edit{
+border-radius: 7px;
+  border: 2px black solid;
+
+  display: inline;
+  margin-top: 5px;
+}
+
+ul.poll-list button.delete{
+  border-radius: 7px;
+  border: 2px black solid;
+  display: inline;
+  margin-top: 5px;
+}
+
+ul.poll-list input{
+border-radius: 7px;
+  border: 2px black solid;
+  display: inline;
+  margin-top: 5px;
+}
+
+
+article.Poll-container button#create-new {
   border-radius: 7px;
   border: 2px black solid;
   opacity:0.4;
   display: inline;
   margin-top: 5px;
-  font-size: large;
+  margin-left: 40px
 }
 
- article.Poll-container button.create-new:hover {
+ article.Poll-container button#create-new:hover {
   opacity:1;
   color:black;
+}
+
+form#form-content input{
+  border-radius: 7px;
+  border: 2px black solid;
+  display: inline;
+  margin-top: 5px;
 }
 
 
