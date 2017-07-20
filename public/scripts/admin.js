@@ -48,8 +48,7 @@
 //   $('.form-content').on('submit', function (event) {
 //     event.preventDefault(); // prevents the page from going to /tweets
 //     const pollItemTitle = $(this).find('.item title').val(); // this will give us the actual value of data not serialize the data
-//     const pollItemDescrip = $(this).find('.item descrip').val();
-//     if (dataCheck(pollItemTitle) && (dataCheck(pollItemDescrip))) { // Will call the function to run, if return true do this
+//     if (dataCheck(pollItemTitle) ) { // Will call the function to run, if return true do this
 //       $.ajax({
 //         url: '/admin',
 //         method: 'POST',
@@ -65,8 +64,15 @@
 //   });
 
   $("#create-new").on("click", () => {
-    $("#form-content").slideToggle();
+    $("#form-content").slideToggle(750);
   });
+
+  $(".edit").on("click", () => {
+    $(".item").slideToggle(750);
+  });
+
+
+
 
 
 
