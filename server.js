@@ -16,7 +16,7 @@ const knexLogger       = require("knex-logger");
 
 // Seperated Routes for each Resource
 const indexRoutes      = require("./routes/index");
-const submissionRoutes = require("./routes/submission");
+const submissionRoutes = require("./routes/poolpage");
 const adminRoutes      = require("./routes/admin");
 const resultRoutes     = require("./routes/result");
 
@@ -50,13 +50,13 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
-app.get("/poll", (req, res) => {
-  res.render("pollpage");
-});
+// app.get("/poll", (req, res) => {
+//   res.render("pollpage");
+// });
 
-app.get("/admin", (req, res) => {
-  res.render("admin");
-});
+// app.get("/admin", (req, res) => {
+//   res.render("admin");
+// });
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
