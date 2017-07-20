@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Vote</title>
-
-    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
-    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <title>Vote on a Poll</title>
+    <% include partials/_header %>
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <div class="container vote">
+      <h4 class="choices">Rank your choices, from most to least preferred</h4>
+
+      </ol>
+      <div>
+        <form id="voteForm" action="/users" method="POST" class="form-horizontal">
+          <button class="btn btn-danger butt" type="submit">Submit Vote</button>
+        </form>
+      <div class="container-fluid thankyou hide" id="thankyou">
+        <h4>Thanks for your vote!</h4>
+      </div>
+     </div>
+    </div>
   </body>
 </html>
-
-
-<!--add footer-->
