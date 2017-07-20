@@ -23,6 +23,21 @@ module.exports = knex => {
         if (err) return console.error(err);
         console.log("INSERTED ==> ", id);
       });
+    for (var i = 0; i < options; i++) {
+      knex
+        .insert({
+          decision_id: decisionId,
+          option_description: option_description,
+          votes: 0,
+          sub_link: subLink
+        })
+        .into("pool")
+        .then((err, id) => {
+          if (err) return console.error(err);
+          console.log("INSERTED ==> ", id);
+        });
+    }
+
     //We pass the api_key and domain to the wrapper, or it won't be able to identify + send emails
     var mailgun = new Mailgun({ apiKey: api_key, domain: domain });
 
