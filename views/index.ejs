@@ -1,20 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Create a New Poll</title>
-  </head>
-
+    <title> Decision Maker </title>
+    <!--   <% include partials/_header %> Link toCSS to go in there. -->
+  <head>
   <body>
-  <main class="container">
-    <div class= "form-group">
-    <form action="/" method="POST">
-      <input name="title" type="text" placeholder="Enter Title ">
-      <input name="option" type= "text" placeholder="Enter choices">
-      <input name="description" type= "text" placeholder="Enter a description for your choices">
-      <input name="email" type="email" placeholder="Enter email here">
-      <button class="btn btn-default"" type="submit">Submit</button>
-    </form>
+    <div class="container">
+    <div class="jumbotron">
+    <h1>Create a Poll </h1>
+    <p3><b>Trying to decide what to do on a Friday night? Too many indecesive friends? Look no further!</b></p>
+      Just  enter the following details, and you are good to go!</b><p3>
     </div>
-  </main>
+
+   </div>
+
+      <!-- Title field -->
+
+        <div class= "form-group">
+        <div class="titleField">
+          <label class="control-label col-md-1" for="title" data-options="1" id="title">Title:</label>
+          <div class='col-md-10-'>
+           <input class= "form-control title" name="title" type="text" placeholder="Enter title here "/>
+          </div>
+        </div>
+
+      <!-- Options field -->
+
+       <div class= "form-group optionField" id= "pollOption1">
+          <label class="control-label col-md-1" for="option1">Option 1 :</label>
+          <div class='col-md-5'>
+          <input class= "form-control" name="option1" type= "text" placeholder="Enter option here "/>
+          </div>
+          <div class='col-md-5'>
+            <textarea class= "form-control" name="desc1" type="text" placeholder="Optional: Enter a description "></textarea>
+          </div>
+        </div>
+
+      <!--Add additional options, use the hide options from bootstrap(Just copy paste from previous options)-->
+
+        <div class="form-group hide" id= "pollOption2">
+          <label class="control-label col-md-1" for="email">Option 2:</label>
+          <div class='col-md-5'>
+            <input class= "form-control" name="option2" type= "text" placeholder="Enter option here"/>
+          </div>
+          <div class='col-md-5'>
+            <textarea class= "form-control" name="description2" type="text" placeholder="Optional: Enter a description"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group hide" id= "pollOption3">
+          <label class="control-label col-md-1" for="email">Option 3 :</label>
+          <div class='col-md-5'>
+            <input class= "form-control" name="option3" type= "text" placeholder="Enter option here"/>
+          </div>
+          <div class='col-md-5'>
+            <textarea class= "form-control" name="description3" type="text" placeholder="Optional: Enter a description"></textarea>
+          </div>
+        </div
+
+        <div class="form-group hide" id= "pollOption4">
+          <label class="control-label col-md-1" for="email">Option 4:</label>
+          <div class='col-md-5'>
+            <input class= "form-control" name="option4" type= "text" placeholder="Enter option here"/>
+          </div>
+          <div class='col-md-5'>
+            <textarea class= "form-control" name="description4" type="text" placeholder="Optional: Enter a description"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group hide" id= "pollOption5">
+          <label class="control-label col-md-1" for="email">Option 5:</label>
+          <div class='col-md-5'>
+            <input class= "form-control" name="option5" type= "text" placeholder="Enter option here"/>
+          </div>
+          <div class='col-md-5'>
+            <textarea class= "form-control" name="description5" type="text" placeholder="Optional: Enter a description"></textarea>
+          </div>
+        </div>
+
+    <div class="container">
+    <div class="pollForm centerDiv">
+      <form id="pollForm" action="/" method="POST" class="form-horizontal">
+        <div class= "form-group email-field">
+          <label class="control-label col-md-1" for="email">Email:</label>
+          <div class='col-xs-2'>
+            <input class= "form-control email" name="email" type="email" placeholder="Enter email here">
+            <small id="email" class="form-text text-muted"><p3>We'll never share your email with anyone else</p3>.</small>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+            <!--Need to add tools for submission-->
+
+
+<!-- When poll gets created -->
+      <div class="container">
+    <div class="centerDiv poll-success hide">
+      <h3>Your poll has been created! You will receive an email with <i>two links</i> shortly. </h3>
+      <p3> In your email there will be links with submission results and an administrative option so you can  add more, in case your pesky friends have not made their minds up<p3>
+    </div>
+
   </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Action for when polls are created
+
+
+    <div class="container">
+    <div class="centerDiv poll-success hide">
+      <h3>Your poll has been created! You will receive an email with <i>two links</i> shortly. </h3>
+      <p1> In your email there will be links with submission results and an administrative option so you can  add more, in case your pesky friends hav. not made their minds up<p1>
+    </div>
+
+    <div class="container">
+    <div class="pollForm centerDiv">
+      <form id="pollForm" action="/" method="POST" class="form-horizontal">
+        <div class= "form-group email-field">
+          <label class="control-label col-md-1" for="email">Email:</label>
+          <div class='col-xs-4'>
+            <input class= "form-control email" name="email" type="email" placeholder="Enter email here">
+            <small id="email" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        </div>
+
+
+
+        <div class= "form-group title-field">
+          <label class="control-label col-md-1" for="title" data-options="1" id="title">Title:</label>
+          <div class='col-xs-4'>
+           <input class= "form-control title" name="title" type="text" placeholder="Title"/>
+          </div>
+        </div>
+
+
+ <main class="container">
+  <form id="pollForm" action="/" method="POST" class="form-horizontal">
+    <div class= "form-group">
+      <label class="control-label col-xs-1" for="email"><b>Email</b>:</label>
+    <div class= "form-group">
+      <label class="control-label col-xs-1" for="email" data-options="1" id="title">Title:</label>
+      <div class='col-xs-4'>
+       <input class= ".formcontrol" name="title" type="text" placeholder="Please enter a title for "/>
+      </div>
+    </div>
+    <div class='col-xs-4'>
+        <input class= ".formcontrol" name="email" type="email" placeholder="Enter email here">
+      </div>
+    </div>
