@@ -14,7 +14,7 @@ const knex = require("knex")(knexConfig[ENV]);
 const morgan = require("morgan");
 const knexLogger = require("knex-logger");
 const Mailgun = require("mailgun-js");
-const api_key = "key-8283fc6f9fdffdb4af3b8ceec1e36c9f";
+const api_key = "";
 const domain = "dm.lighthouse.com";
 const from_who = "your@email.com";
 // Seperated Routes for each Resource
