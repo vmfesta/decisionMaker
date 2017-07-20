@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../styles/index-layout.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+      <!-- App JS -->
+    <script type="text/javascript" src="/scripts/admin.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <!-- Top nav bar (fixed) -->
+    <nav id="nav-bar">
+      <h1 class="header">Decision Maker</h1>
+    </nav>
+
+ <!-- Page-specific (main) content here -->
+    <div class="container">
+      <article class="Poll-container">
+        <header class="Poll">
+
+
+          <h3>Create a Poll</h3>
+        </header>
+        <span class= "Poll-descrip">
+          <h6 class ="Description">Trying to decide what to do on a Friday night? Too many indecesive friends? Look no further!
+              Just  enter the following details, and you are good to go!!!!</h6>
+        </span>
+          <div class = "Question"><b>Question Text</b></div>
+            <textarea class="question-title" name="text" placeholder="Enter your question "></textarea>
+
+          <ul class = "poll-list">
+            <li class = "item1">Option 1</li>
+              <form class="item">
+                <textarea class="item-title" name="text" placeholder="Enter your option "></textarea>
+                <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
+              </form>
+            <li class = "item2">Option 2</li>
+             <form class="item">
+                <textarea class="item-title" name="text" placeholder="Enter your option "></textarea>
+                   <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
+              </form>
+              <li class = "item3">Option 3</li>
+             <form class="item">
+                <textarea class="item-title" name="text" placeholder="Enter your option "></textarea>
+                   <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
+              </form>
+           </ul>
+            <button id ="create-new" type="New">Add option</button>
+            <form id ="form-content">
+              <textarea class="item-title" name="text" placeholder="Enter your option"></textarea>
+              <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
+               <input class= "form-control email" name="email" type="email" placeholder="Enter email here">
+            <form id="email" class="form-text text-muted"><p2>We'll never share your email with anyone else</p2>.</form>
+            <input type="submit" value="Save and Send">
+           </form>
+              <div class="container">
+        <div class="centerDiv poll-success hide">
+          <h3>Your poll has been created! You will receive an email with <i>two links</i> shortly. </h3>
+           <p3> In your email there will be links with <i>submission results</i> and an <i>administrative option</i> so you can  add more, in case your pesky friends have not made their minds up<p3>
+            </div>
+            </article>
+            </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
