@@ -11,7 +11,7 @@ let countVotes = {};
 
 var winner;
 
-function calculeVotes() {
+function calculeVotes(votes) {
     maxScore = Object.keys(votes).length -1 ;
     _.each(votes, (voter) => {
        for (var i = 0; i < voter.length; i++) {
@@ -22,6 +22,7 @@ function calculeVotes() {
             }
         }
     });
+    checkWinner();
 }
 
 function checkWinner() {
@@ -40,10 +41,6 @@ function checkWinner() {
             }
         }
     }
+    return winner;
 }
 
-
-
-calculeVotes();
-checkWinner();
-console.log(winner);

@@ -25,7 +25,8 @@
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
       <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/admin.js"></script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -51,35 +52,38 @@
           <h6 class ="Description">Dont want another boring movie!!!</h6>
         </span>
           <ul class = "poll-list">
-            <li class = "item1">"Wonder woman" </li>
-              <button type="Edit">Edit</button>
-              <button type="Delete">Delete</button>
+            <li class = "item1">Wonder Woman </li>
+              <p>Description</p>
+              <button class= "edit" type="Edit">Edit</button>
+              <button class= "delete" type="Delete">Delete</button>
               <form class="item">
                 <textarea class="item-title" name="text" placeholder="Item"></textarea>
-                <textarea class= "item-decrip" name="text" placeholder="Description"></textarea>
+                <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
                 <input type="submit" value="Save">
               </form>
-            <li class = "item2 ">"Guardians of Galaxy"</li>
-              <button type="Edit">Edit</button>
-              <button type="Delete">Delete</button>
+            <li class = "item2">Guardians of Galaxy</li>
+              <p>Description</p>
+              <button class= "edit" type="Edit">Edit</button>
+              <button class= "delete" type="Delete">Delete</button>
               <form class="item">
                 <textarea class="item-title" name="text" placeholder="Item"></textarea>
-                <textarea class= "item-decrip" name="text" placeholder="Description"></textarea>
+                <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
                 <input type="submit" value="Save">
               </form>
-            <li class= "item3">"Spiderman"</li>
-              <button type="Edit">Edit</button>
-              <button type="Delete">Delete</button>
+            <li class= "item3">Spiderman</li>
+              <p>Description</p>
+              <button class= "edit" type="Edit">Edit</button>
+              <button class= "delete" type="Delete">Delete</button>
               <form class="item">
                 <textarea class="item-title" name="text" placeholder="Item"></textarea>
-                <textarea class= "item-decrip" name="text" placeholder="Description"></textarea>
+                <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
                 <input type="submit" value="Save">
               </form>
            </ul>
-            <button class ="create-new" type="New">New</button>
-            <form class="form-content">
+            <button id ="create-new" type="New">New</button>
+            <form id ="form-content">
               <textarea class="item-title" name="text" placeholder="Item"></textarea>
-              <textarea class= "item-decrip" name="text" placeholder="Description"></textarea>
+              <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
               <input type="submit" value="Save">
             </form>
             </article>

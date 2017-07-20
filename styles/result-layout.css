@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   color: #244751;
-  background-color: #eee;  /* #eee */
+  background-color: aliceblue;  /* #eee */
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -60,15 +60,36 @@ div.container {
   float:left; display:inline; width: 49%;
 }
 
+article.Poll-container {
+  padding-top: 10px;
+  width: 100%;
+  background: #fff;
+  font-size: 13px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  min-height: 350px;
+  border: 1px solid gray;
+  clear: both;
+}
+
 header.Poll h3 {
   margin: 0;
   float: left;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: xx-large;
+  text-align: center
+  color: #385473;
 }
 
-span.Poll-descrip h6 {
+
+span.Poll-descrip h6{
   padding-top: 150px;
   margin: 0;
+  font-size: large;
+  padding-left: 30px;
+  color: #385473;
 }
 
 ul.poll-list li.item1{
@@ -77,6 +98,8 @@ ul.poll-list li.item1{
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
 }
 
 ul.poll-list li.item2{
@@ -85,39 +108,23 @@ ul.poll-list li.item2{
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
 }
 
 ul.poll-list li.item3{
-
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
 }
 
-form.form-content textarea.item-title {
-  display: block;
-  width: 100%;
-}
-
-form.form-content textarea.item-decrip {
-  display: block;
-  width: 100%;
-}
-
-article.Poll-container button.create-new {
-  border-radius: 7px;
-  border: 2px black solid;
-  opacity:0.4;
-  display: inline;
-  margin-top: 5px;
-  font-size: large;
-}
-
- article.Poll-container button.create-new:hover {
-  opacity:1;
-  color:black;
+p.description{
+  font-size: medium;
+  color: #385473;
 }
 
 div.vote-container {
@@ -126,22 +133,119 @@ div.vote-container {
   padding: 100px;
   float:left; display:inline; width: 49%;
   text-align: center;
-  padding-bottom: 300px;
+  padding-bottom: 100px;
+
 }
 
-div h3.votes {
+div article.vote-container {
   padding-top: 80px;
+  padding-bottom: 60px;
+  width: 450px;
+  background: #fff;
+  font-size: 13px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  min-height: 100px;
+  border: 1px solid gray;
+  clear: both;
 }
 
-div.results {
+header.Votes h3{
+  margin: 0;
+  font-size: xx-large;
+  padding-left: 30px;
+  color: #385473;
+}
+
+ul.voting-list li.item1{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+
+ul.voting-list li.item2{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+ul.voting-list li.item3{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+div.results-container {
+  width: 1080px;
+  background: #fff;
+  font-size: 13px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  min-height: 50px;
+  border: 1px solid gray;
+  clear: both;
+  padding-bottom: 100px;
+  margin-bottom: 100px
+  padding-right: 500px;
+  margin: 100px;
 
 }
 
-div.results h2 {
-   top: 10px;
-  margin: 10px 0;
-  padding: 100px;
-  display:inline;
-  text-align: center;
+div.results-container h2 {
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
 }
+
+p.results{
+  font-size: medium;
+  color: #385473;
+  padding-left: 50px;
+}
+
+.springy-text {
+  color: white;
+  animation-name: springy-text;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes springy-text {
+  0%   {
+    letter-spacing: 1.2em;
+    color: white;
+  }
+  100%   {
+    letter-spacing: 0.1em;
+    color: orange;
+  }
+}
+
+
+
+
+
+
 
