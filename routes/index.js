@@ -5,6 +5,7 @@ const Mailgun = require("mailgun-js");
 const api_key = "";
 const domain = "dm.lighthouse.com";
 const from_who = "your@email.com";
+
 const router = express.Router();
 
 module.exports = knex => {
