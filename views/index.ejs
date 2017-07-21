@@ -1,129 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title> Decision Maker </title>
-    <!--   <% include partials/_header %> Link toCSS to go in there. -->
-     <link href="../styles/index-layout.css" rel="stylesheet">
-  <head>
-  <body>
-    <div class="container">
-    <div class="jumbotron">
-    <h1>Create a Poll </h1>
-    <p3><b>Trying to decide what to do on a Friday night? Too many indecesive friends? Look no further!</b></p>
-      Just  enter the following details, and you are good to go!</b><p3>
-    </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-      <!-- Title field -->
+    <title>Starter Template for Bootstrap</title>
 
-        <div class= "form-group">
-        <div class="titleField">
-          <label class="control-label col-md-1" for="title" data-options="1" id="title">Title:</label>
-          <div class='col-md-10-'>
-           <input class= "form-control title" name="title" type="text" placeholder="Enter title here "/>
-          </div>
-        </div>
+    <!-- Custom styles for this template -->
+    <link href="./index-layout.css" rel="stylesheet">
 
-      <!-- Options field -->
+    <!-- App JS -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <nav id="nav-bar">
+        <h1 class="header">Decision Maker</h1>
+    </nav>
+</head>
 
-       <div class= "form-group optionField" id= "pollOption1">
-          <label class="control-label col-md-1" for="option1">Option 1 :</label>
-          <div class='col-md-5'>
-          <input class= "form-control" name="option1" type= "text" placeholder="Enter option here "/>
-          </div>
-          <div class='col-md-5'>
-            <textarea class= "form-control" name="desc1" type="text" placeholder="Optional: Enter a description "></textarea>
-          </div>
-        </div>
+<body>
+    <span class="Poll-descrip">
+        <h6 class ="Description">Trying to decide what to do on a Friday night? Too many indecesive friends? Look no further!
+            Just  enter the following details, and you are good to go!!!!</h6>
+    </span>
+    <form method="POST" action="/api/index/new">
+        <section class="title">
+            <div class="Question"><b>Question Text</b></div>
+            <input class="question-title" name="title" placeholder="Title"/></br>
+            <textarea class="question-description" name="titleDesc" placeholder="Enter your question"></textarea>
+        </section>
+        <ul class = "poll-list">
+            <li class = "item1">Option</li>
+            <input class="item-title" name="option1Title" placeholder="Enter your option"/></br>
+            <textarea class="item-descrip" name="option1description" placeholder="Optional: Enter a description of your option"></textarea>
+            
+            <li class = "item1">Option</li>
+            <input class="item-title" name="option2Title" placeholder="Enter your option"/></br>
+            <textarea class="item-descrip" name="option2description" placeholder="Optional: Enter a description of your option"></textarea>
+            
+            <li class = "item1">Option</li>
+            <input class="item-title" name="option3Title" placeholder="Enter your option"/></br>
+            <textarea class="item-descrip" name="option3description" placeholder="Optional: Enter a description of your option"></textarea>
+            <section id="new-op">
 
-      <!--Add additional options, use the hide options from bootstrap(Just copy paste from previous options)-->
+            </section>
+            </br>
+            <button id ="add-item" type="New">Add option</button>
+        </ul>
+            <input class="email" name="email" placeholder="Enter your email"/>
+            <button id ="add-item" type="New">Add option</button>
 
-        <div class="form-group hide" id= "pollOption2">
-          <label class="control-label col-md-1" for="email">Option 2:</label>
-          <div class='col-md-5'>
-            <input class= "form-control" name="option2" type= "text" placeholder="Enter option here"/>
-          </div>
-          <div class='col-md-5'>
-            <textarea class= "form-control" name="description2" type="text" placeholder="Optional: Enter a description"></textarea>
-          </div>
-        </div>
-
-        <div class="form-group hide" id= "pollOption3">
-          <label class="control-label col-md-1" for="email">Option 3 :</label>
-          <div class='col-md-5'>
-            <input class= "form-control" name="option3" type= "text" placeholder="Enter option here"/>
-          </div>
-          <div class='col-md-5'>
-            <textarea class= "form-control" name="description3" type="text" placeholder="Optional: Enter a description"></textarea>
-          </div>
-        </div
-
-        <div class="form-group hide" id= "pollOption4">
-          <label class="control-label col-md-1" for="email">Option 4:</label>
-          <div class='col-md-5'>
-            <input class= "form-control" name="option4" type= "text" placeholder="Optional: Enter option here"/>
-          </div>
-          <div class='col-md-5'>
-            <textarea class= "form-control" name="description4" type="text" placeholder="Optional: Enter a description"></textarea>
-          </div>
-        </div>
-
-        <div class="form-group hide" id= "pollOption5">
-          <label class="control-label col-md-1" for="email">Option 5:</label>
-          <div class='col-md-5'>
-            <input class= "form-control" name="option5" type= "text" placeholder="Optional: Enter option here"/>
-          </div>
-          <div class='col-md-5'>
-            <textarea class= "form-control" name="description5" type="text" placeholder="Optional: Enter a description"></textarea>
-          </div>
-        </div>
-
-    <div class="container">
-    <div class="pollForm centerDiv">
-      <form id="pollForm" action="/" method="POST" class="form-horizontal">
-        <div class= "form-group email-field">f
-          <label class="control-label col-md-1" for="email">Email:</label>
-          <div class='col-xs-2'>
-            <input class= "form-control email" name="email" type="email" placeholder="Enter email here">
-            <small id="email" class="form-text text-muted"><p3>We'll never share your email with anyone else</p3>.</small>
-          </div>
-        </div>
-      </form>
-    </div>
-
-  <!--tools for submission-->
-<div class="form-group col-md-offset-1">
-          <span class= "input-group-btn">
-          <div class= "row">
-            <button type="button" class="btn btn-dang addButton"><i class=""></i></button>
-            <button type="button" class="btn btn-success minusButton"><i class="fa fa-minus"></i></button>
-            <button class="btn btn-default col-md-offset-1" type="submit">Submit</button>
-            </div>
-          </span>
-        </div>
-
-
-
-<!-- When poll gets created -->
-      <div class="container">
-    <div class="centerDiv poll-success hide">
-      <h3>Your poll has been created! You will receive an email with <i>two links</i> shortly. </h3>
-      <p3> In your email there will be links with <i>submission results</i> and an <i>administrative option</i> so you can  add more, in case your pesky friends have not made their minds up<p3>
-    </div>
-
-  </body>
- </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </form>
+    </body>
