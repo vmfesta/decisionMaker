@@ -1,0 +1,216 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: #244751;
+  background-color: aliceblue;  /* #eee */
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+    margin: 0 auto; /* to push it down otherwise you wont see it because the header and logo is fixed */
+    width: 450px;
+    border: 3px ;
+    padding: 19px;
+    padding-bottom: 140px;
+    padding-top: 140px;
+    background-color: #FFFFFF;
+    position: inherit;
+}
+
+/* navigator bar css */
+
+#nav-bar {
+  position: fixed;
+  height: 80px;
+  width: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 2em;
+  z-index:1000;
+  display: block;
+  background-color: #0081a0;
+}
+
+
+#nav-bar h1.header {
+  font-size: 2em;  /* 2em is the same as 2X the font */
+  line-height: 80px;
+  padding-left: 10px;
+  margin: 10px;
+  color: #e8fdff;
+  height: 70px;
+  margin: 0 10px;
+ text-align:center;
+}
+
+/* new polls css */
+
+
+header.Poll h3 {
+  margin: 0;
+  float: left;
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: xx-large;
+  text-align: center
+  color: #385473;
+}
+
+
+span.Poll-descrip h6{
+  padding-top: 150px;
+  margin: 0;
+  font-size: large;
+  padding-left: 30px;
+  color: #385473;
+}
+
+
+
+ul.poll-list li.item2{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+ul.poll-list li.item3{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+p.description{
+  font-size: medium;
+  color: #385473;
+}
+
+
+header.Votes h3{
+  margin: 0;
+  font-size: xx-large;
+  padding-left: 30px;
+  color: #385473;
+}
+
+ul.voting-list li.item1{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+
+ul.voting-list li.item2{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+ul.voting-list li.item3{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+
+
+#makeMeDraggable {
+  float: left;
+  width: 200px;
+  height: 150px;
+  background: lightblue;
+  clear: both;
+  border: 1px solid gray;
+}
+
+#makeMeDraggable2 {
+  float: left;
+  width: 200px;
+  height: 150px;
+  background: lightblue;
+  clear: both;
+   border: 1px solid gray;
+}
+
+#makeMeDraggable3 {
+  float: left;
+  width: 200px;
+  height: 150px;
+  background: lightblue;
+  clear: both;
+   border: 1px solid gray;
+
+}
+
+#makeMeDraggable div.item1{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+#makeMeDraggable2 div.item2{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+#makeMeDraggable3 div.item3{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+.droppable {
+  width: 200px;
+  height: 150px;
+  clear: both;
+  border: 1px solid gray;
+}
+
+header.Poll {
+  margin-top: 100px;
+}
+
+
+.votes {
+  float: right;
+  margin-top: -320px;
+}
