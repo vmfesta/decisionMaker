@@ -1,0 +1,275 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  color: #244751;
+  background-color: aliceblue;  /* #eee */
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main {
+    margin: 0 auto; /* to push it down otherwise you wont see it because the header and logo is fixed */
+    width: 450px;
+    border: 3px ;
+    padding: 19px;
+    padding-bottom: 140px;
+    padding-top: 140px;
+    background-color: #FFFFFF;
+    position: inherit;
+}
+
+/* navigator bar css */
+
+#nav-bar {
+  position: fixed;
+  height: 80px;
+  width: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 2em;
+  z-index:1000;
+  display: block;
+  background-color: #0081a0;
+}
+
+
+#nav-bar h1.header {
+  font-size: 2em;  /* 2em is the same as 2X the font */
+  line-height: 80px;
+  padding-left: 10px;
+  margin: 10px;
+  color: #e8fdff;
+  height: 70px;
+  margin: 0 10px;
+ text-align:center;
+}
+
+/* new polls css */
+
+
+
+header.Poll h3 {
+  margin: 0;
+  float: left;
+  padding-top: 50px;
+  padding-left: 20px;
+  font-size: xx-large;
+  text-align: center
+  color: #385473;
+}
+
+
+span.Poll-descrip h6{
+  padding-top: 150px;
+  margin: 0;
+  font-size: large;
+  padding-left: 30px;
+  color: #385473;
+}
+
+
+
+ul.poll-list li.item2{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+ul.poll-list li.item3{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+p.description{
+  font-size: medium;
+  color: #385473;
+}
+
+div.vote-container {
+  top: 10px;
+  margin: 10px 0;
+  padding: 100px;
+  float:left; display:inline; width: 49%;
+  text-align: center;
+  padding-bottom: 100px;
+
+}
+
+div article.vote-container {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  width: 450px;
+  background: #fff;
+  font-size: 13px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  min-height: 100px;
+  border: 1px solid gray;
+  clear: both;
+}
+
+header.Votes h3{
+  margin: 0;
+  font-size: xx-large;
+  padding-left: 30px;
+  color: #385473;
+}
+
+ul.voting-list li.item1{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+
+ul.voting-list li.item2{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+ul.voting-list li.item3{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+div.results-container {
+  width: 1080px;
+  background: #fff;
+  font-size: 13px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  min-height: 50px;
+  border: 1px solid gray;
+  clear: both;
+  padding-bottom: 100px;
+  margin-bottom: 100px
+  padding-right: 500px;
+  margin: 100px;
+
+}
+
+div.results-container h2 {
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+p.results{
+  font-size: medium;
+  color: #385473;
+  padding-left: 50px;
+}
+
+.springy-text {
+  color: white;
+  animation-name: springy-text;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes springy-text {
+  0%   {
+    letter-spacing: 1.2em;
+    color: white;
+  }
+  100%   {
+    letter-spacing: 0.1em;
+    color: orange;
+  }
+}
+
+#makeMeDraggable {
+  width: 200px;
+  height: 150px;
+  background: lightblue;
+  clear: both;
+  border: 1px solid gray;
+}
+
+#makeMeDraggable2 {
+  width: 200px;
+  height: 150px;
+  background: lightblue;
+  clear: both;
+   border: 1px solid gray;
+}
+
+#makeMeDraggable3 {
+  width: 200px;
+  height: 150px;
+  background: lightblue;
+  clear: both;
+   border: 1px solid gray;
+
+}
+
+#makeMeDraggable li.item1{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+#makeMeDraggable2 li.item2{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+#makeMeDraggable3 li.item3{
+  height: 75px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  font-size: x-large;
+  color: #385473;
+}
+
+
+
