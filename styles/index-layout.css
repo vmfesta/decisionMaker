@@ -113,12 +113,11 @@ textarea.question-title {
   padding: 10px;
   font-size: 14px;
   border-radius: 7px;
-  margin-left: 35px;
 }
 
 
 
-ul.poll-list li.item1{
+ul.poll-list li{
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -126,29 +125,10 @@ ul.poll-list li.item1{
   padding-right: 20px;
   font-size: large;
   color: #385473;
+  list-style: none;
 }
 
-ul.poll-list li.item2{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: large;
-  color: #385473;
-}
-
-ul.poll-list li.item3{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: large;
-  color: #385473;
-}
-
-form.item textarea.item-title{
+div.item textarea.item-title{
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -156,7 +136,7 @@ form.item textarea.item-title{
   border-radius: 7px;
 }
 
-form.item textarea.item-descrip{
+div.item textarea.item-descrip{
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -168,7 +148,7 @@ form#form-content{
   padding: 0px 40px 40px 40px;
 }
 
-form#form-content textarea.item-title{
+div#form-content textarea.item-title{
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -176,7 +156,11 @@ form#form-content textarea.item-title{
   border-radius: 7px;
 }
 
-form#form-email{
+div.form-email{
+
+}
+
+div.new-choice textarea.item-descrip{
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -184,30 +168,7 @@ form#form-email{
   border-radius: 7px;
 }
 
-form#form-content textarea.item-descrip{
-  margin: 0px;
-  width: 550px;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 7px;
-}
-
-ul.poll-list button.edit{
-border-radius: 7px;
-  border: 2px black solid;
-
-  display: inline;
-  margin-top: 5px;
-}
-
-ul.poll-list button.delete{
-  border-radius: 7px;
-  border: 2px black solid;
-  display: inline;
-  margin-top: 5px;
-}
-
-ul.poll-list input{
+input {
 border-radius: 7px;
   border: 2px black solid;
   display: inline;
@@ -229,14 +190,12 @@ article.Poll-container button#create-new {
   color:black;
 }
 
-form#form-content input{
+div#form-content input{
   border-radius: 7px;
   border: 2px black solid;
   display: inline;
   margin-top: 5px;
 }
-
-
 
 
 
