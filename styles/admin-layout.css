@@ -41,7 +41,7 @@ main {
 
 
 #nav-bar h1.header {
-  font-size: 2em;  /* 2em is the same as 2X the font */
+  font-size: 3em;  /* 2em is the same as 2X the font */
   line-height: 80px;
   padding-left: 10px;
   margin: 10px;
@@ -60,16 +60,16 @@ div.container{
 }
 
 article.Poll-container {
-    padding-top: 10px;
-    width: 100%;
-    background: #fff;
-    font-size: 13px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    min-height: 350px;
-    border: 1px solid gray;
-    clear: both;
+  padding-top: 10px;
+  width: 100%;
+  background: #fff;
+  font-size: 13px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  min-height: 350px;
+  border: 1px solid gray;
+  clear: both;
   /*border: 2px gray solid;
   border-radius: 7px;
   top: 10px;
