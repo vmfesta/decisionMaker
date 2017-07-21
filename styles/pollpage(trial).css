@@ -168,7 +168,7 @@ ul.voting-list li.item3{
 
 }
 
-#makeMeDraggable li.item1{
+#makeMeDraggable div.item1{
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -178,7 +178,7 @@ ul.voting-list li.item3{
   color: #385473;
 }
 
-#makeMeDraggable2 li.item2{
+#makeMeDraggable2 div.item2{
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -188,7 +188,7 @@ ul.voting-list li.item3{
   color: #385473;
 }
 
-#makeMeDraggable3 li.item3{
+#makeMeDraggable3 div.item3{
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -211,7 +211,6 @@ header.Poll {
 
 
 .votes {
-  position: fixed;
-  right: 20px;
-  top: 250px;
+  float: right;
+  margin-top: -320px;
 }

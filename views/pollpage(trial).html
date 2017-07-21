@@ -56,16 +56,6 @@ function init() {
   } );
 }
 
-var movies = [{}, {}, {}];
-
-movies.forEach((m) => {
-  $('#votes').append(`
-    <div id="content" style="height: 150px;">
-          <div id="makeMeDroppable" class="droppable"> </div>
-        </div>
-  `);
-})
-
 </script>
 <script type="text/javascript">
 
@@ -81,6 +71,7 @@ function init() {
 function handleDropEvent( event, ui ) {
   var draggable = ui.draggable;
   alert( 'The square with ID "' + draggable.attr('id') + '" was dropped onto me!' );
+
 }
 
 </script>
@@ -111,22 +102,22 @@ function handleDropEvent( event, ui ) {
           <h6 class ="Description">Dont want another boring movie!!!</h6>
         </span>
           <ul class = "poll-list">
-            <div id="content" style="height: 150px;">
+            <div id="content" style="height: 150px;z-index:99;">
               <div id="makeMeDraggable">
-                <li class = "item1">Wonder woman</li>
+                <div class = "item1">Wonder woman</div>
                 <p class = "description" >Description</p>
 
             </div>
 
             <div id="content" style="height: 150px;">
               <div id="makeMeDraggable2">
-                <li class = "item2 ">Guardians of Galaxy</li>
+                <div class = "item2 ">Guardians of Galaxy</div>
                 <p class = "description" >Description</p>
 
              </div>
              <div id="content" style="height: 150px;">
                <div id="makeMeDraggable3">
-                <li class= "item3">Spiderman</li>
+                <div class= "item3">Spiderman</div>
                 <p class = "description" >Description</p>
 
              </div>
