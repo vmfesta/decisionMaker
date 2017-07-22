@@ -57,10 +57,10 @@ header.Poll h3 {
   margin: 0;
   float: left;
   padding-top: 50px;
-  padding-left: 20px;
   font-size: xx-large;
   text-align: center
   color: #385473;
+  padding-left: 400px;
 }
 
 
@@ -71,8 +71,6 @@ span.Poll-descrip h6{
   padding-left: 30px;
   color: #385473;
 }
-
-
 
 ul.poll-list li.item2{
   height: 75px;
@@ -138,8 +136,6 @@ ul.voting-list li.item3{
   color: #385473;
 }
 
-
-
 .draggable {
   float: left;
   width: 200px;
@@ -150,52 +146,23 @@ ul.voting-list li.item3{
   z-index: 99;
 }
 
-#makeMeDraggable2 {
-  float: left;
-  width: 200px;
-  height: 150px;
-  background: lightblue;
-  clear: both;
-   border: 1px solid gray;
-}
-
-#makeMeDraggable3 {
-  float: left;
-  width: 200px;
-  height: 150px;
-  background: lightblue;
-  clear: both;
-   border: 1px solid gray;
-
-}
-
-#makeMeDraggable div.item1{
+.draggable div.item{
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 20px;
-  font-size: x-large;
+  font-size: large;
   color: #385473;
 }
 
-#makeMeDraggable2 div.item2{
+.draggable p.description{
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 20px;
-  font-size: x-large;
-  color: #385473;
-}
-
-#makeMeDraggable3 div.item3{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: x-large;
+  font-size: large;
   color: #385473;
 }
 
@@ -218,4 +185,12 @@ header.Poll {
 
 div.container-fluid {
   padding-top:100px;
+}
+
+div.row {
+  padding-top:50px;
+}
+
+div.number{
+  font-size: x-large;
 }
