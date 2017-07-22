@@ -54,13 +54,12 @@ main {
 
 
 header.Poll h3 {
-  margin: 0;
-  float: left;
+
   padding-top: 30px;
   font-size: xx-large;
   text-align: center
   color: #385473;
-  padding-left: 400px;
+
 }
 
 
