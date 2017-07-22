@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- App JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/scripts/admin.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Top nav bar (fixed) -->
+  <nav id="nav-bar">
+    <h1 class="header">Decision Maker</h1>
+  </nav>
+
+  <!-- Page-specific (main) content here -->
+  <div class="container">
+    <article class="Poll-container">
+      <header class="Poll">
+
+      </header>
+      <span class="Poll-descrip">
+          <h3 class="<%=url%>" id="title"></h3>
+          <h6 class ="TitleDescription">Dont want another boring movie!!!</h6>
+        </span>
+      <ul class="poll-list">
+        <li class="item1">Wonder Woman </li>
+        <p>Description</p>
+        <button class="edit" type="Edit">Edit</button>
+        <button class="delete" type="Delete">Delete</button>
+        <textarea class="item-title" name="text" placeholder="Item"></textarea>
+        <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
+        <input type="submit" value="Save">
+        <li class="item2">Guardians of Galaxy</li>
+        <p>Description</p>
+        <button class="edit" type="Edit">Edit</button>
+        <button class="delete" type="Delete">Delete</button>
+        <textarea class="item-title" name="text" placeholder="Item"></textarea>
+        <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
+        <input type="submit" value="Save">
+        <li class="item3">Spiderman</li>
+        <p>Description</p>
+        <button class="edit" type="Edit">Edit</button>
+        <button class="delete" type="Delete">Delete</button>
+        <textarea class="item-title" name="text" placeholder="Item"></textarea>
+        <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
+        <input type="submit" value="Save">
+      </ul>
+      <button id="create-new" type="New">New</button>
+      <textarea class="item-title" name="text" placeholder="Item"></textarea>
+      <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
+      <input type="submit" value="Save">
+    </article>
+  </div>
+  
+</body>
+
+</html>
