@@ -56,7 +56,7 @@ main {
 header.Poll h3 {
   margin: 0;
   float: left;
-  padding-top: 50px;
+  padding-top: 30px;
   font-size: xx-large;
   text-align: center
   color: #385473;
@@ -64,7 +64,7 @@ header.Poll h3 {
 }
 
 
-span.Poll-descrip h6{
+span.Poll-descrip h6 {
   padding-top: 150px;
   margin: 0;
   font-size: large;
@@ -72,17 +72,12 @@ span.Poll-descrip h6{
   color: #385473;
 }
 
-ul.poll-list li.item2{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: x-large;
-  color: #385473;
+ul.poll-list {
+  padding-left: 100px;
 }
 
-ul.poll-list li.item3{
+
+ul.poll-list li.item {
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -98,41 +93,10 @@ p.description{
 }
 
 
-header.Votes h3{
+header.Votes h3 {
   margin: 0;
   font-size: xx-large;
   padding-left: 30px;
-  color: #385473;
-}
-
-ul.voting-list li.item1{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: x-large;
-  color: #385473;
-}
-
-
-ul.voting-list li.item2{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: x-large;
-  color: #385473;
-}
-
-ul.voting-list li.item3{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: x-large;
   color: #385473;
 }
 
@@ -146,7 +110,7 @@ ul.voting-list li.item3{
   z-index: 99;
 }
 
-.draggable div.item{
+.draggable div.item {
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -156,7 +120,7 @@ ul.voting-list li.item3{
   color: #385473;
 }
 
-.draggable p.description{
+.draggable p.description {
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -177,10 +141,8 @@ header.Poll {
   margin-top: 100px;
 }
 
-
 .votes {
   float: right;
-
 }
 
 div.container-fluid {
@@ -188,9 +150,13 @@ div.container-fluid {
 }
 
 div.row {
-  padding-top:50px;
+  padding-top:0px;
 }
 
-div.number{
+div.number {
   font-size: x-large;
+}
+
+div#content {
+  padding-right: 100px;
 }
