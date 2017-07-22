@@ -140,13 +140,14 @@ ul.voting-list li.item3{
 
 
 
-#makeMeDraggable {
+.draggable {
   float: left;
   width: 200px;
   height: 150px;
   background: lightblue;
   clear: both;
   border: 1px solid gray;
+  z-index: 99;
 }
 
 #makeMeDraggable2 {
@@ -212,5 +213,9 @@ header.Poll {
 
 .votes {
   float: right;
-  margin-top: -320px;
+
+}
+
+div.container-fluid {
+  padding-top:100px;
 }
