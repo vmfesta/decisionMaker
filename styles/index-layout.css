@@ -59,25 +59,6 @@ div.container{
     padding: 300px;
 }
 
-article.Poll-container {
-    padding-top: 10px;
-    width: 100%;
-    background: #fff;
-    font-size: 13px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    min-height: 350px;
-    border: 1px solid gray;
-    clear: both;
-  /*border: 2px gray solid;
-  border-radius: 7px;
-  top: 10px;
-  margin: 10px 0;
-  padding: 100px;*/
-}
-
-
 header.Poll h3 {
   margin: 0;
   float: left;
@@ -86,6 +67,7 @@ header.Poll h3 {
   font-size: xx-large;
   text-align: center
   color: #385473;
+  padding-left: 400px;
 
 }
 
