@@ -28,6 +28,7 @@ module.exports = knex => {
     knex
       .insert({
         title: title,
+        description: description,
         adm_link: admLink,
         sub_link: subLink,
         result_link: resLink,

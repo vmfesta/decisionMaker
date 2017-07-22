@@ -10,10 +10,7 @@
     <title>Starter Template for Bootstrap</title>
 
     <!-- Custom styles for this template -->
-  <link href="../styles/index-layout.css" rel="stylesheet">
-
-   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="./index-layout.css" rel="stylesheet">
 
     <!-- App JS -->
     <script
@@ -27,44 +24,36 @@
 </head>
 
 <body>
-
-    <div class="container-fluid">
-    <div class="row">
-    <div class="col-md-12 text-center">
     <span class="Poll-descrip">
-        <h6 class ="Description">Trying to decide what to do on a Friday night? Too many indecesive friends?<br> Look no further!
-            Just  enter the following details, your and you are good to go!!!!</br></h6>
+        <h6 class ="Description">Trying to decide what to do on a Friday night? Too many indecesive friends? Look no further!
+            Just  enter the following details, and you are good to go!!!!</h6>
     </span>
     <form method="POST" action="/api/index/new">
         <section class="title">
             <div class="Question"><b>Question Text</b></div>
-            <textarea class="question-title" name="title" placeholder="Enter your question"></textarea>
+            <input class="question-title" name="title" placeholder="Title"/></br>
+            <textarea class="question-description" name="titleDesc" placeholder="Enter your question"></textarea>
         </section>
         <ul class = "poll-list">
-            <li class = "item1"><b>Option 1</b></li>
+            <li class = "item1">Option</li>
             <input class="item-title" name="option1Title" placeholder="Enter your option"/></br>
             <textarea class="item-descrip" name="option1description" placeholder="Optional: Enter a description of your option"></textarea>
-
-            <li class = "item1"><b>Option 2</b></li>
+            
+            <li class = "item1">Option</li>
             <input class="item-title" name="option2Title" placeholder="Enter your option"/></br>
             <textarea class="item-descrip" name="option2description" placeholder="Optional: Enter a description of your option"></textarea>
-
-            <li class = "item1"><b>Option 3</b></li>
+            
+            <li class = "item1">Option</li>
             <input class="item-title" name="option3Title" placeholder="Enter your option"/></br>
             <textarea class="item-descrip" name="option3description" placeholder="Optional: Enter a description of your option"></textarea>
             <section id="new-op">
 
             </section>
             </br>
-            <button id ="add-item" type="New"><b>+</b></button>
-            <button id ="add-item" type="New"><b>-</b></button> <!--I added a remove button as well, might cause conflict,just check -->
+            <button id ="add-item" type="New">Add option</button>
         </ul>
-            <div><b>Email</div>
             <input class="email" name="email" placeholder="Enter your email"/>
-            <button id ="add-item" type="submit"><b>Save and Submit</b></button>
+            <button id ="add-item" type="New">Add option</button>
 
     </form>
-    </div>
-    </div>
-    </div>
     </body>
