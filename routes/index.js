@@ -11,7 +11,7 @@ const router = express.Router();
 module.exports = knex => {
   router.post("/new", (req, res) => {
     const title = req.body.title;
-    const description = req.body.titleDesc
+    const description = req.body.titleDesc;
     const admLink = generateLink();
     const subLink = generateLink();
     const resLink = generateLink();
@@ -23,7 +23,6 @@ module.exports = knex => {
       option_title.push(req.body["option" + j + "Title"]);
       option_description.push(req.body["option" + j + "description"]);
     }
-    console.log(option_title);
 
     //console.log(req.body["option" + 1 + "Title"]);
     knex
@@ -35,35 +34,24 @@ module.exports = knex => {
         result_link: resLink,
         email: email
       })
+      .returning("id")
       .into("decisions")
-      .then((err, result) => {
-        if (err) return console.error(err);
-        knex
-          .select("id")
-          .from("decisions")
-          .where( {
-            sub_link: subLink
-          })
-          .then((err,id) => {
-            if (err) return console.error(err);
-            decisionId = id;
-          })
+      .then((id) => {
+        for (var i = 0; i < 3; i++) {
+          decisionId = Number(id[0]);
+          knex
+            .insert({
+              decision_id: decisionId,
+              option_description: option_description[i],
+              option_title: option_title[i],
+              votes: 0
+            })
+            .into("pool")
+            .then((err, result) => {
+              console.log(err,result);
+            });
+        }
       });
-
-    for (var i = 0; i < 3; i++) {
-      knex
-        .insert({
-          decision_id: decisionId,
-          option_description: option_description[i],
-          option_title: option_title[i],
-          votes: 0
-        })
-        .into("pool")
-        .then((err, id) => {
-          if (err) return console.error(err);
-          console.log("INSERTED ==> ", id);
-        });
-    }
 
     //We pass the api_key and domain to the wrapper, or it won't be able to identify + send emails
     // var mailgun = new Mailgun({ apiKey: api_key, domain: domain });
@@ -96,12 +84,13 @@ module.exports = knex => {
   return router;
 
   function generateLink() {
-  let text = "";
-  let possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let text = "";
+    let possible =
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-  for (var i = 0; i < 5; i++)
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
+    for (var i = 0; i < 5; i++)
+      text += possible.charAt(Math.floor(Math.random() * possible.length));
 
-  return text;
-}
+    return text;
+  }
 };
