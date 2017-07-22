@@ -7,10 +7,10 @@ html {
 }
 
 body {
-  margin: 0;
-  color: #244751;
-  background-color: aliceblue;  /* #eee */
-  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 !important;
+  color: #244751 !important;
+  background-color: aliceblue !important;  /* #eee */
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 main {
