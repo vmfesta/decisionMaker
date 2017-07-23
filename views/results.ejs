@@ -11,24 +11,21 @@
 
     <title>Starter Template for Bootstrap</title>
 
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="../styles/admin-layout.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-
+    <link href="../styles/result-layout.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
 
       <!-- App JS -->
-    <script type="text/javascript" src="/scripts/admin.js"></script>
-
+    <script type="text/javascript" src="/scripts/result.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -45,44 +42,49 @@
     </nav>
 
  <!-- Page-specific (main) content here -->
-    <div class="container">
-      <article class="Poll-container">
+    <div class="container-fluid">
+      <div class="row">
+      <div id = "container-1" class="col-md-6 text-center">
         <header class="Poll">
-
+          <h3>What Movie should we see next Friday? </h3>
         </header>
         <span class= "Poll-descrip">
-          <h3 id="title">What Movie should we see next Friday?</h3>
-          <h6 class ="TitleDescription">Dont want another boring movie!!!</h6>
+          <h6 class ="Description">Dont want another boring movie!!!</h6>
         </span>
           <ul class = "poll-list">
-            <li class = "item1">Wonder Woman </li>
-              <p>Description</p>
-              <button class= "edit" type="Edit">Edit</button>
-              <button class= "delete" type="Delete">Delete</button>
-                <textarea class="item-title" name="text" placeholder="Item"></textarea>
-                <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
-                <input type="submit" value="Save">
-            <li class = "item2">Guardians of Galaxy</li>
-              <p>Description</p>
-              <button class= "edit" type="Edit">Edit</button>
-              <button class= "delete" type="Delete">Delete</button>
-                <textarea class="item-title" name="text" placeholder="Item"></textarea>
-                <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
-                <input type="submit" value="Save">
+            <li class = "item1">Wonder woman</li>
+            <p class = "description" >Description</p>
+            <li class = "item2 ">Guardians of Galaxy</li>
+             <p class = "description" >Description</p>
             <li class= "item3">Spiderman</li>
-              <p>Description</p>
-              <button class= "edit" type="Edit">Edit</button>
-              <button class= "delete" type="Delete">Delete</button>
-                <textarea class="item-title" name="text" placeholder="Item"></textarea>
-                <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
-                <input type="submit" value="Save">
-           </ul>
-            <button id ="create-new" type="New">New</button>
-              <textarea class="item-title" name="text" placeholder="Item"></textarea>
-              <textarea class="item-descrip" name="text" placeholder="Description"></textarea>
-              <input type="submit" value="Save">
-            </article>
-    </div>
+             <p class = "description" >Description</p>
+          </ul>
+      </div>
+  <div id= "container-2" class="col-md-6 text-center">
+    <header class="Votes">
+      <h3>Polling Votes</h3>
+    </header>
+      <ul class = "voting-list">
+        <li class = "item1">Wonder woman</li>
+        <p class = "description" >Number of votes:</p>
+        <li class = "item2 ">Guardians of Galaxy</li>
+        <p class = "description">Number of votes:</p>
+        <li class= "item3">Spiderman</li>
+        <p class = "description" >Number of votes</p>
+      </ul>
+  </div>
+  </div>
+  <div class="row">
+
+  </div>
+  <div class="row">
+
+  </div>
+      <div class="row">
+      <h2 class="springy-text text-center">Results!</h2>
+      <p class = "results text-center" > Wonder woman got the most votes </p>
+  </div>
+</div>
 
 
     <!-- Bootstrap core JavaScript

@@ -38,41 +38,44 @@
     </nav>
 
  <!-- Page-specific (main) content here -->
-   <div class="container-fluid">
+   <div class="container">
     <div class="row text-center">
       <header class="Poll">
-        <h3>What Movie should we see next Friday? </h3>
+        <h1>Go Vote</h1>
+        <h3>Question text goes here</h3>
       </header>
       <span class= "Poll-descrip">
-        <h6 class ="Description">Dont want another boring movie!!!</h6>
+        <h6 class ="Description">Instructions: To vote simply drag your most preferred choices from top to bottom</h6>
       </span>
     </div>
 
     <div class="row">
       <div class="col-md-6">
+        <div class = "Options text-center"><b>Options</b></div>
         <ul class = "poll-list">
           <div id="content" style="height: 150px;">
             <div class="draggable">
-            <div class = "item">Wonder woman</div>
-            <p class = "description" >Description</p>
+            <div class = "item"><b>Option 1</b></div>
+            <p class = "description" >Description of Option</p>
             </div>
           </div>
           <div id="content" style="height: 150px;">
             <div class="draggable">
-            <div class = "item ">Guardians of Galaxy</div>
-            <p class = "description" >Description</p>
+            <div class = "item "><b>Option 2</b></div>
+            <p class = "description" >Description of Option</p>
             </div>
           </div>
           <div id="content" style="height: 150px;">
             <div class="draggable">
-            <div class= "item">Spiderman</div>
-            <p class = "description" >Description</p>
+            <div class= "item"><b>Option 3</b></div>
+            <p class = "description" >Description of Option</p>
             </div>
           </div>
         </ul>
       </div>
       <div class="col-md-6">
-        <ul id="votes" class = "votes">
+      <ul id="votes" class = "votes">
+        <div class = "Votetitle text-center"><b>Votes</b></div>
           <div id="content" style="height: 150px;">
             <div class="droppable">
             <div class = "number text-center">1</div>
@@ -87,6 +90,10 @@
             <div class="droppable">
             <div class = "number text-center">3</div>
             </div>
+            <div class="button">
+              <button id ="votebutton" type="submit"><b>Submit Vote</b></button>
+            </div>
+            <div>
           </div>
         </ul>
       </div>
