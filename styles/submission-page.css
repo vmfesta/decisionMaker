@@ -6,10 +6,10 @@ html {
 }
 
 body {
-  margin: 0;
-  color: #244751;
-  background-color: aliceblue;  /* #eee */
-  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 !important;
+  color: #244751 !important;
+  background-color: aliceblue !important;  /* #eee */
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 main {
@@ -40,7 +40,7 @@ main {
 
 
 #nav-bar h1.header {
-  font-size: 2em;  /* 2em is the same as 2X the font */
+  font-size: 3em;  /* 2em is the same as 2X the font */
   line-height: 80px;
   padding-left: 10px;
   margin: 10px;
@@ -54,18 +54,18 @@ main {
 
 
 header.Poll h3 {
-  margin: 0;
-  float: left;
+
+
   padding-top: 30px;
   font-size: xx-large;
   text-align: center
   color: #385473;
-  padding-left: 400px;
+
 }
 
 
 span.Poll-descrip h6 {
-  padding-top: 150px;
+  padding-top: 50px;
   margin: 0;
   font-size: large;
   padding-left: 30px;
@@ -122,11 +122,11 @@ header.Votes h3 {
 
 .draggable p.description {
   height: 75px;
-  padding-top: 30px;
+
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 20px;
-  font-size: large;
+  font-size: small;
   color: #385473;
 }
 
@@ -145,8 +145,9 @@ header.Poll {
   float: right;
 }
 
-div.container-fluid {
+div.container{
   padding-top:100px;
+  padding-bottom: 100px;
 }
 
 div.row {
@@ -159,4 +160,27 @@ div.number {
 
 div#content {
   padding-right: 100px;
+}
+
+div.Options{
+  font-size: 250%;
+  padding-right: 100px;
+}
+
+div.Votetitle{
+  font-size: 250%;
+  padding-right: 100px;
+
+}
+
+button#votebutton {
+  border-radius: 7px;
+  border: 2px black solid;
+  display: inline;
+}
+
+div.button{
+
+  padding-left: 50px;
+  padding-top: 10px;
 }
