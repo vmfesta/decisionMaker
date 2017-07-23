@@ -1,5 +1,5 @@
   /* main layout */
-html {
+ejs {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -7,10 +7,10 @@ html {
 }
 
 body {
-  margin: 0;
-  color: #244751;
-  background-color: aliceblue;  /* #eee */
-  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0 !important;
+  color: #244751 !important;
+  background-color: aliceblue !important;  /* #eee */
+  font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 main {
@@ -41,7 +41,7 @@ main {
 
 
 #nav-bar h1.header {
-  font-size: 2em;  /* 2em is the same as 2X the font */
+  font-size: 3em;  /* 2em is the same as 2X the font */
   line-height: 80px;
   padding-left: 10px;
   margin: 10px;
@@ -56,7 +56,7 @@ main {
 div.container{
     position: relative;
     left: 0em;
-    padding: 300px;
+    padding: 400px;
 }
 
 header.Poll h3 {
@@ -75,7 +75,7 @@ span.Poll-descrip h6{
   padding-top: 150px;
   margin: 0;
   font-size: large;
-  padding-left: 30px;
+
   color: #385473;
 }
 
@@ -83,7 +83,7 @@ div.Question{
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-right: 20px;
   font-size: large;
   color: #385473;
@@ -108,6 +108,7 @@ ul.poll-list li.item1{
   padding-right: 20px;
   font-size: large;
   color: #385473;
+  list-style: none;
 }
 
 ul.poll-list li.item2{
@@ -130,7 +131,7 @@ ul.poll-list li.item3{
   color: #385473;
 }
 
-form.item textarea.item-title{
+input.item-title{
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -138,7 +139,8 @@ form.item textarea.item-title{
   border-radius: 7px;
 }
 
-form.item textarea.item-descrip{
+
+textarea.item-descrip{
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -146,35 +148,7 @@ form.item textarea.item-descrip{
   border-radius: 7px;
 }
 
-form#form-content{
-  padding: 0px 40px 40px 40px;
-}
-
-form#form-content textarea.item-title{
-  margin: 0px;
-  width: 550px;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 7px;
-}
-
-form#form-email{
-  margin: 0px;
-  width: 550px;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 7px;
-}
-
-form#form-content textarea.item-descrip{
-  margin: 0px;
-  width: 550px;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 7px;
-}
-
-ul.poll-list button.edit{
+poll-list button.add-item{
 border-radius: 7px;
   border: 2px black solid;
 
@@ -189,35 +163,23 @@ ul.poll-list button.delete{
   margin-top: 5px;
 }
 
-ul.poll-list input{
-border-radius: 7px;
-  border: 2px black solid;
-  display: inline;
-  margin-top: 5px;
-}
-
-
-article.Poll-container button#create-new {
+ input.email{
+  margin: 0px;
+  width: 380px;
+  padding: 5px;
+  font-size: 14px;
   border-radius: 7px;
-  border: 2px black solid;
-  opacity:0.4;
-  display: inline;
-  margin-top: 5px;
-  margin-left: 40px
-}
+ }
 
- article.Poll-container button#create-new:hover {
-  opacity:1;
-  color:black;
-}
-
-form#form-content input{
+ button#add-item {
   border-radius: 7px;
   border: 2px black solid;
   display: inline;
-  margin-top: 5px;
 }
 
+.p {
+  font-size: x-large;
+}
 
 
 
