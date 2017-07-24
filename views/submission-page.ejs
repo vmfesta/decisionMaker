@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <link href="/styles/submission-page.css" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/scripts/submission-page.js"></script>
+
+
+  <!-- App JS -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Top nav bar (fixed) -->
+  <nav id="nav-bar">
+    <h1 class="header">Decision Maker</h1>
+  </nav>
+
+  <!-- Page-specific (main) content here -->
+  <div class="container">
+    <div class="row text-center">
+      <header class="Poll">
+        <h1 class="dTitle" id="<%=url%>">Go Vote</h1>
+      </header>
+      <span class="Poll-descrip">
+        <h6 class ="Description">Instructions: To vote simply drag your most preferred choices from top to bottom</h6>
+      </span>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="Options text-center"><b>Options</b></div>
+        <ul class="poll-list">
+          <div id="content" style="height: 150px;">
+            <div class="draggable text-center" id="1">
+              <div id="op1" class="item"><b>Option 1</b></div>
+              <p id="desc1" class="description">Description of Option</p>
+            </div>
+          </div>
+          <div id="content" style="height: 150px;">
+            <div class="draggable text-center" id="2">
+              <div id="op2" class="item "><b>Option 2</b></div>
+              <p id="desc2" class="description">Description of Option</p> 
+            </div>
+          </div>
+          <div id="content" style="height: 150px;">
+            <div class="draggable text-center" id="3">
+              <div id="op3" class="item"><b>Option 3</b></div>
+              <p id="desc3" class="description">Description of Option</p>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul id="votes" class="votes">
+          <div class="Votetitle text-center"><b>Votes</b></div>
+          <div id="content" style="height: 150px;">
+            <div class="droppable">
+              <div class="number text-center">1</div>
+            </div>
+          </div>
+          <div id="content" style="height: 150px;">
+            <div class="droppable">
+              <div class="number text-center">2</div>
+            </div>
+          </div>
+          <div id="content" style="height: 150px;">
+            <div class="droppable">
+              <div class="number text-center">3</div>
+            </div>
+            <div class="button">
+              <button id="votebutton" type="submit"><b>Submit Vote</b></button>
+            </div>
+            <div>
+            </div>
+        </ul>
+        </div>
+
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- <script type="text/javascript">
+          $(document).ready(function () {
+
+
+            function init() {
+              $('.draggable').draggable({
+                
+              });
+              $('.droppable').droppable({
+                drop: handleDropEvent
+              });
+            }
+
+            function handleDropEvent(event, ui) {
+              var draggable = ui.draggable;
+              console.log(ui);
+              console.log(event.target.innerHTML);
+              alert('The square with ID "' + draggable.attr('id') + '" was dropped onto me!');
+
+            }
+
+            init();
+
+          });
+
+        </script> -->
+
+</body>
+
+</html>

@@ -12,7 +12,7 @@
     <title>Starter Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -26,6 +26,7 @@
 
       <!-- App JS -->
     <script type="text/javascript" src="/scripts/admin.js"></script>
+
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -43,59 +44,68 @@
     </nav>
 
  <!-- Page-specific (main) content here -->
- <div style="min-width: 960px; margin: 0 auto;">
-    <div class="container">
-      <article class="Poll-container">
-        <header class="Poll">
+ <!--<div style="min-width: 960px; margin: 0 auto;"><header class="Poll">-->
+  <h3>Create a Poll</h3>
+  </header>
+    <span class= "Poll-descrip">
+    <h6 class ="Description">Trying to decide what to do on a Friday night? Too many indecesive friends? Look no further!
+              Just enter the following details, and you are good to go!!!!</h6>
+    </span>
 
+ <div class="container-fluid">
+  <div class="row">
 
+  <div class="col-md-12 text-center">
+    <form>
+    <div class = "Question"><b>Question Text</b></div>
+              <textarea class="question-title" name="text" placeholder="Enter your question "></textarea>
 
-          <h3>Create a Poll</h3>
-        </header>
-        <span class= "Poll-descrip">
-          <h6 class ="Description">Trying to decide what to do on a Friday night? Too many indecesive friends? Look no further!
-              Just  enter the following details, and you are good to go!!!!</h6>
-        </span>
-          <div class = "Question"><b>Question Text</b></div>
-            <textarea class="question-title" name="text" placeholder="Enter your question "></textarea>
-
-          <ul class = "poll-list">
-            <li class = "item1">Option 1</li>
-              <form class="item">
-                <textarea class="item-title" name="text" placeholder="Enter your option "></textarea>
-                <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
-              </form>
-            <li class = "item2">Option 2</li>
-             <form class="item">
-                <textarea class="item-title" name="text" placeholder="Enter your option "></textarea>
-                   <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
-              </form>
-              <li class = "item3">Option 3</li>
-             <form class="item">
-                <textarea class="item-title" name="text" placeholder="Enter your option "></textarea>
-                   <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
-              </form>
-           </ul>
-            <button id ="create-new" type="New">Add option</button>
-            <form id ="form-content">
-              <textarea class="item-title" name="text" placeholder="Enter your option"></textarea>
-              <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
-           <div class = "form-email"><b>Enter Email</div>
-            <textarea class="Email-enter" name="email" type="email" placeholder="Enter your email "></textarea>
-            <input type="submit" value="Save and Send">
-           <div
-            <p3>We'll never share your email with anyone else</p3>
+        <li class = "item1"><b>Option 1</b></li>
+          <div class="item">
+            <textarea class="item-title" name="text" placeholder="Enter your option "></textarea>
           </div>
-           </form>
+          <div class="item">
+            <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
+          </div>
+        <li class = "item2"><b>Option 2</b></li>
+         <div class="item">
+            <textarea class="item-title" name="text" placeholder="Enter your option "></textarea>
+          </div>
+          <div class="item">
+            <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
+          </div>
+          <li class = "item3"><b>Option 3</b></li>
+         <div class="item">
+            <textarea class="item-title" name="text" placeholder="Enter your option "></textarea>
+          </div>
+          <div class="item">
+            <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
+          </div>
+
+        <button id ="create-new" type="New">Add option</button>
+        <div id ="form-content">
+          <textarea class="item-title" name="text" placeholder="Enter your option"></textarea>
+          </div>
+          <div class= "new-choice" >
+          <textarea class="item-descrip" name="text" placeholder="Optional: Enter a description of your option"></textarea>
+          </div>
+       <div class = "form-email"><b>Enter Email</b></div>
+          <div>
+        <textarea class="Email-enter" name="email" type="email" placeholder="Enter your email "></textarea>
+          </div>
+        <input type="submit" value="Save and Send">
+       </form>
+    </div>
+
+</div>
+
+
+
+
 
           <!-- After we click the submit button, I want a pop up or message saying "Your poll....... in case your friends have not made up thei minds" -->
 
-          <h3>Your poll has been created! You will receive an email with <i>two links</i> shortly. </h3>
-           <p3> In your email there will be links with <i>submission results</i> and an <i>administrative option</i> so you can  add more, in case your pesky friends have not made their minds up<p3>
-            </div>
-            </article>
-            </div>
-            </div>
+
 
 
     <!-- Bootstrap core JavaScript

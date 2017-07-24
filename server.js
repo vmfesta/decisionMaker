@@ -17,6 +17,8 @@ const knexLogger       = require("knex-logger");
 // Seperated Routes for each Resource
 const indexRoutes      = require("./routes/index");
 const adminRoutes      = require("./routes/admin");
+const resultRoutes     = require("./routes/result");
+const submissionRoutes = require("./routes/submission");
 
 // Load the logger first so all (static) HTTP requests are logged to STDOUT
 // 'dev' = Concise output colored by response status for development use.
@@ -42,15 +44,17 @@ app.use(express.static("public"));
 // Mount all resource routes
 app.use("/api/index", indexRoutes(knex));
 app.use("/api/admin", adminRoutes(knex));
+app.use("/api/result", resultRoutes(knex));
+app.use("/api/submission", submissionRoutes(knex));
 
 // Home page
 app.get("/", (req, res) => {
   res.render("index");
 });
 
-// app.get("/poll", (req, res) => {
-//   res.render("pollpage");
-// });
+app.get("/admin", (req, res) => {
+  res.render("result");
+});
 
 app.get("/admin", (req, res) => {
   res.render("admin");
