@@ -1,4 +1,4 @@
-  /* main layout */
+/* main layout */
 html {
   box-sizing: border-box;
 }
@@ -14,7 +14,7 @@ body {
 }
 
 main {
-    margin: 0 auto; /* to push it down otherwise you wont see it because the header and logo is fixed */
+    margin: 0 auto;
     width: 450px;
     border: 3px ;
     padding: 19px;
@@ -41,7 +41,7 @@ main {
 
 
 #nav-bar h1.header {
-  font-size: 400%; /* 2em is the same as 2X the font */
+  font-size: 400%;
   line-height: 80px;
   padding-left: 10px;
   margin: 10px;
@@ -53,18 +53,17 @@ main {
 
 /* new polls css */
 
-
 header.Poll h3 {
   margin: 0;
   float: left;
   padding-top: 50px;
   padding-left: 390px;
   font-size: 250%;
-  text-align: center;
+  text-align: center
   color: #385473;
 }
 
-span.Poll-descrip h6{
+span.Poll-descrip h6 {
   padding-top: 150px;
   margin: 0;
   font-size: 220%;
@@ -72,10 +71,9 @@ span.Poll-descrip h6{
   color: #385473;
 }
 
-ul.poll-list li{
-  
+ul.poll-list li {
   height: 75px;
-  padding-top: 100px;
+  padding-top: 30px;
   padding-left: 20px;
   padding-bottom: 30px;
   padding-right: 20px;
@@ -89,8 +87,6 @@ p.description{
   color: #385473;
 }
 
-
-
 p.results{
   font-size: medium;
   color: #385473;
@@ -100,7 +96,7 @@ p.results{
 
 .springy-text {
   color: white;
-  font-size: 400%;
+   font-size: 400%;
   animation-name: springy-text;
   animation-duration: 1s;
   animation-timing-function: ease;
@@ -132,7 +128,6 @@ div#container-1 {
   background-color: #c1d5ea;
   min-height: 500px;
 }
-
 
 
 
