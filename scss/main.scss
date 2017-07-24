@@ -1,0 +1,13 @@
+$background-color: aliceblue;
+$font-stack:    Helvetica, sans-serif;
+
+body {
+  font: 100% $font-stack;
+  color: $background-color;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
