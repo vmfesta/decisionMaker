@@ -1,0 +1,142 @@
+  /* main layout */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 !important;
+  color: #244751 !important;
+  background-color: aliceblue !important;
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+main {
+    margin: 0 auto; /* to push it down otherwise you wont see it because the header and logo is fixed */
+    width: 450px;
+    border: 3px ;
+    padding: 19px;
+    padding-bottom: 140px;
+    padding-top: 140px;
+    background-color: #FFFFFF;
+    position: inherit;
+}
+
+/* navigator bar css */
+
+#nav-bar {
+  position: fixed;
+  height: 80px;
+  width: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 2em;
+  z-index:1000;
+  display: block;
+  background-color: #0081a0;
+}
+
+
+#nav-bar h1.header {
+  font-size: 400%; /* 2em is the same as 2X the font */
+  line-height: 80px;
+  padding-left: 10px;
+  margin: 10px;
+   color: #e8fdff;
+  height: 70px;
+  margin: 0 10px;
+ text-align:center;
+}
+
+/* new polls css */
+
+
+header.Poll h3 {
+  margin: 0;
+  float: left;
+  padding-top: 50px;
+  padding-left: 390px;
+  font-size: 250%;
+  text-align: center;
+  color: #385473;
+}
+
+span.Poll-descrip h6{
+  padding-top: 150px;
+  margin: 0;
+  font-size: 220%;
+  padding-left: 30px;
+  color: #385473;
+}
+
+ul.poll-list li{
+  
+  height: 75px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+   font-size: 200%;
+  color: #385473;
+  list-style: none;
+}
+
+p.description{
+  font-size: medium;
+  color: #385473;
+}
+
+
+
+p.results{
+  font-size: medium;
+  color: #385473;
+  padding-left: 50px;
+  font-size: 200%;
+}
+
+.springy-text {
+  color: white;
+  font-size: 400%;
+  animation-name: springy-text;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes springy-text {
+  0%   {
+    letter-spacing: 1.2em;
+    color: white;
+  }
+  100%   {
+    letter-spacing: 0.1em;
+    color: orange;
+  }
+}
+
+div.container-fluid {
+  padding-top: 100px;
+}
+
+header .Poll{
+  padding-left: 50px;
+}
+
+div#container-1 {
+  background-color: #c1d5ea;
+  min-height: 500px;
+}
+
+
+
+
+
+
+
+
