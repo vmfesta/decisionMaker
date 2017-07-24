@@ -37,7 +37,6 @@ module.exports = knex => {
             }
           })
           .then(() => {
-            console.log(info);
             res.send(info);
           });
       });
@@ -52,13 +51,11 @@ module.exports = knex => {
 
   router.post("/update/:data" , (req, res) => {
     let params = req.params.data.split(",");
-    console.log(params);
     knex()
       .select("id")
       .from("decisions")
       .whereRaw(`adm_link = '${params[0]}'`)
     .then((result) => {
-      console.log(result);
       knex("pool")
         .whereRaw(`decision_id = ${result[0].id} and option_title = '${params[3]}' and option_description = '${params[4]}'`)
         .update({
@@ -66,7 +63,6 @@ module.exports = knex => {
           option_description: params[2],
           thisKeyIsSkypped:undefined
         }).then(count => {
-          console.log("done"); 
         })
     });
   });

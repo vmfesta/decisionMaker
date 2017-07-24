@@ -2,7 +2,7 @@
 
 const express = require("express");
 const Mailgun = require("mailgun-js");
-const api_key = "key-8283fc6f9fdffdb4af3b8ceec1e36c9f";
+const api_key = "";
 const domain = "sandbox206c5cd1264647a996f0e1324c3a0242.mailgun.org";
 const from_who = "your@email.com";
 const bodyParser = require("body-parser");
@@ -24,7 +24,6 @@ module.exports = knex => {
       option_description.push(req.body["option" + j + "description"]);
     }
 
-    //console.log(req.body["option" + 1 + "Title"]);
     knex
       .insert({
         title: title,
@@ -75,7 +74,6 @@ module.exports = knex => {
         //Here "submitted.jade" is the view file for this landing page
         //We pass the variable "email" from the url parameter in an object rendered by Jade
         res.redirect(`/api/admin/${admLink}`);
-        console.log(body);
       }
     });
   });

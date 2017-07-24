@@ -11,14 +11,31 @@ exports.up = function(knex, Promise) {
     }),
     knex.schema.createTable("pool", function(table) {
       table.increments();
-      table.bigInteger('decision_id').unsigned().index().references('id').inTable('decisions ')
+      table
+        .bigInteger("decision_id")
+        .unsigned()
+        .index()
+        .references("id")
+        .inTable("decisions ");
+      table.string("option_title");
       table.string("option_description");
       table.integer("votes");
+    }),
+    knex.schema.createTable("votes", function(table) {
+      table.increments();
+      table
+        .bigInteger("decision_id")
+        .unsigned()
+        .index()
+        .references("id")
+        .inTable("decisions ");
+      table.string("votes");
     })
   ]);
 };
 
 exports.down = function(knex, Promise) {
-    knex.schema.dropTable('decisions');
-    knex.schema.dropTable('pool')
+  knex.schema.dropTable("decisions");
+  knex.schema.dropTable("pool");
+  knex.schema.dropTable("votes");
 };
