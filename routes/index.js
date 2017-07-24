@@ -74,7 +74,7 @@ module.exports = knex => {
         //Else we can greet    and leave
         //Here "submitted.jade" is the view file for this landing page
         //We pass the variable "email" from the url parameter in an object rendered by Jade
-        res.redirect("/admin");
+        res.redirect(`/api/admin/${admLink}`);
         console.log(body);
       }
     });

@@ -25,27 +25,14 @@ function calculeVotes(votes) {
       }
     }
   }
-  //});
-  //   _.each(votes, voter => {
-  //     for (var i = 0; i < voter.length; i++) {
-  //       if (countVotes[voter[i]]) {
-  //         countVotes[voter[i]] += maxScore - i;
-  //       } else {
-  //         countVotes[voter[i]] = maxScore - i;
-  //       }
-  //     }
-  //   });
   checkWinner();
 }
 
 function checkWinner() {
   let aux = 0;
-    console.log(countVotes);
   for (var op in countVotes) {
     if (countVotes.hasOwnProperty(op)) {
       var option = countVotes[op];
-      //if (_.isUndefined(winner)) {
-      debugger;
         if (!winner) {
         winner = op;
         aux = option;

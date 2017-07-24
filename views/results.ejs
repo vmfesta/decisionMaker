@@ -10,7 +10,7 @@
   <meta name="author" content="">
 
   <!-- Custom styles for this template -->
-  <link href="../public/styles/result-layout.css" rel="stylesheet">
+  <link href="/styles/result-layout.css" rel="stylesheet">
 
   <!-- App JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -31,10 +31,12 @@
   <!-- Page-specific (main) content here -->
   <div class="container-fluid">
     <div class="row">
-      <div id="container-1" class="col-md-6 text-center">
+      <div id="container-1" class="col-md-12 text-center">
+        <div>
         <header class="Poll">
           <h3 class "descTitle" id="<%=url%>">What Movie should we see next Friday? </h3>
         </header>
+        </div>
         <ul class="poll-list">
           <li class="item1">
             <div id="op1"></div>
@@ -78,7 +80,7 @@
     </div>
     <div class="row">
       <h2 class="springy-text text-center">Results!</h2>
-      <p class="results text-center"> Wonder woman got the most votes </p>
+      <p id="finalResult" class="results text-center"> Wonder woman got the most votes </p>
     </div>
   </div>
 </body>

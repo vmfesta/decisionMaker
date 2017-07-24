@@ -24,33 +24,26 @@ $(document).ready(function() {
       position = 5;
     }
     voteOrder[position - 1] = draggable;
-
-    // alert(
-    //   'The square with ID "' + draggable.attr("id") + '" was dropped onto me!'
-    // );
   }
 
   init();
 
   $("#votebutton").click(() => {
     voteOrder.push($(".dTitle").attr("id"));
-    console.log(voteOrder);
     $.ajax({
       type: "POST",
       url: `/api/submission/save/${voteOrder.toString()}`,
       error: err => {
         console.log(err);
       },
-      success: data => {
-        alert("Vote submitted!");
-        $("#votebutton").remove();
-      }
+      success: data => {}
     });
+    alert("Vote submitted!");
+    $("#votebutton").remove();
   });
 
   $(document).ready(() => {
     let url = $(".dTitle").attr("id");
-    console.log(url);
     $.ajax({
       method: "GET",
       url: `/api/result/data/${url}`,

@@ -21,27 +21,14 @@ function calculateVotes(votes) {
       }
     }
   }
-  //});
-  //   _.each(votes, voter => {
-  //     for (var i = 0; i < voter.length; i++) {
-  //       if (countVotes[voter[i]]) {
-  //         countVotes[voter[i]] += maxScore - i;
-  //       } else {
-  //         countVotes[voter[i]] = maxScore - i;
-  //       }
-  //     }
-  //   });
   checkWinner();
 }
 
 function checkWinner() {
   let aux = 0;
-    //console.log(countVotes);
   for (var op in countVotes) {
     if (countVotes.hasOwnProperty(op)) {
       var option = countVotes[op];
-      //if (_.isUndefined(winner)) {
-      debugger;
         if (!winner) {
         winner = op;
         aux = option;
@@ -58,7 +45,6 @@ function checkWinner() {
 
 $(document).ready(() => {
   let url = $("h3").attr("id");
-  console.log(url);
   $.ajax({
     method: "GET",
     url: `/api/result/data/${url}`,
@@ -67,8 +53,6 @@ $(document).ready(() => {
       console.log(err);
     },
     success: data => {
-      //console.log(data.votes);
-
       $(`h3`).text(data.decisionTitle);
       for (var i = 0; i < 3; i++) {
         $("#op" + Number(i + 1)).replaceWith(data.optionsTitle[i]);
@@ -91,7 +75,7 @@ $(document).ready(() => {
             votes.push(aux);
           }
           calculateVotes(votes);
-          console.log(options[Number(winner)]);
+          $("#finalResult").text(options[Number(winner - 1)]);
         }
       });
     }
