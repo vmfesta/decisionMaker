@@ -1,4 +1,4 @@
-  /* main layout */
+ /* main layout */
 ejs {
   box-sizing: border-box;
 }
@@ -9,12 +9,12 @@ ejs {
 body {
   margin: 0 !important;
   color: #244751 !important;
-  background-color: aliceblue !important;  /* #eee */
+  background-color: aliceblue !important;
   font-family: 'Roboto Condensed', sans-serif !important;
 }
 
 main {
-    margin: 0 auto; /* to push it down otherwise you wont see it because the header and logo is fixed */
+    margin: 0 auto;
     width: 450px;
     border: 3px ;
     padding: 19px;
@@ -41,7 +41,7 @@ main {
 
 
 #nav-bar h1.header {
-  font-size: 3em;  /* 2em is the same as 2X the font */
+  font-size: 3em;
   line-height: 80px;
   padding-left: 10px;
   margin: 10px;
@@ -51,12 +51,17 @@ main {
  text-align:center;
 }
 
-/* new polls css */
-
-div.container{
-    position: relative;
-    left: 0em;
-    padding: 400px;
+article.Poll-container {
+  padding-top: 10px;
+  width: 100%;
+  background: #fff;
+  font-size: 13px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  min-height: 350px;
+  border: 1px solid gray;
+  clear: both;
 }
 
 header.Poll h3 {
@@ -67,19 +72,16 @@ header.Poll h3 {
   font-size: xx-large;
   text-align: center
   color: #385473;
-  padding-left: 400px;
-
 }
 
-span.Poll-descrip h6{
+span.Poll-descrip h6 {
   padding-top: 150px;
   margin: 0;
   font-size: large;
-
   color: #385473;
 }
 
-div.Question{
+div.Question {
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -98,9 +100,7 @@ textarea.question-title {
   margin-left: 35px;
 }
 
-
-
-ul.poll-list li.item1{
+ul.poll-list li.item1 {
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -111,27 +111,7 @@ ul.poll-list li.item1{
   list-style: none;
 }
 
-ul.poll-list li.item2{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: large;
-  color: #385473;
-}
-
-ul.poll-list li.item3{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: large;
-  color: #385473;
-}
-
-input.item-title{
+input.item-title {
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -139,8 +119,7 @@ input.item-title{
   border-radius: 7px;
 }
 
-
-textarea.item-descrip{
+textarea.item-descrip {
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -148,22 +127,7 @@ textarea.item-descrip{
   border-radius: 7px;
 }
 
-poll-list button.add-item{
-border-radius: 7px;
-  border: 2px black solid;
-
-  display: inline;
-  margin-top: 5px;
-}
-
-ul.poll-list button.delete{
-  border-radius: 7px;
-  border: 2px black solid;
-  display: inline;
-  margin-top: 5px;
-}
-
- input.email{
+ input.email {
   margin: 0px;
   width: 380px;
   padding: 5px;
@@ -180,6 +144,12 @@ ul.poll-list button.delete{
 .p {
   font-size: x-large;
 }
+
+
+
+
+
+
 
 
 

@@ -1,4 +1,4 @@
-  /* main layout */
+   /* main layout */
 html {
   box-sizing: border-box;
 }
@@ -63,7 +63,7 @@ span.Poll-descrip h6{
   color: #385473;
 }
 
-ul.poll-list li.item1{
+ul.poll-list li.item{
   height: 75px;
   padding-top: 30px;
   padding-left: 20px;
@@ -73,27 +73,7 @@ ul.poll-list li.item1{
   color: #385473;
 }
 
-ul.poll-list li.item2{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: x-large;
-  color: #385473;
-}
-
-ul.poll-list li.item3{
-  height: 75px;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  font-size: x-large;
-  color: #385473;
-}
-
- textarea.item-title1{
+ textarea.item-title1 {
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -101,7 +81,7 @@ ul.poll-list li.item3{
   border-radius: 7px;
 }
 
- textarea.item-descrip1{
+ textarea.item-title2 {
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -109,7 +89,7 @@ ul.poll-list li.item3{
   border-radius: 7px;
 }
 
- textarea.item-title2{
+ textarea.item-title3 {
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -117,14 +97,7 @@ ul.poll-list li.item3{
   border-radius: 7px;
 }
 
- textarea.item-descrip2{
-  margin: 0px;
-  width: 550px;
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 7px;
-}
- textarea.item-title3{
+ textarea.item-descrip1 {
   margin: 0px;
   width: 550px;
   padding: 10px;
@@ -132,13 +105,22 @@ ul.poll-list li.item3{
   border-radius: 7px;
 }
 
- textarea.item-descrip3{
+textarea.item-descrip2 {
   margin: 0px;
   width: 550px;
   padding: 10px;
   font-size: 14px;
   border-radius: 7px;
 }
+
+textarea.item-descrip3 {
+  margin: 0px;
+  width: 550px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 7px;
+}
+
 button.edit{
   border-radius: 7px;
   border: 2px black solid;
