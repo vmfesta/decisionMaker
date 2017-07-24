@@ -8,7 +8,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="">
   <meta name="author" content="">
-  <link href="../styles/admin-layout.css" rel="stylesheet">
+  <link href="../public/styles/admin-layout.css" rel="stylesheet">
 
   <!-- App JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -30,40 +30,40 @@
       <div class="col-md-12 text-center">
         <span class="Poll-descrip">
           <h3 class="<%=url%>" id="title">Which movie to watch on Friday?</h3>
-          <h6 class ="TitleDescription">Dont want another boring movie!!!</h6>
+          <h6 class ="TitleDescription"></h6>
         </span>
       </div>
     </div>
     <div class="row text-center">
       <div class="col-md-12">
         <ul class="poll-list">
-          <li class="item1"><div id="test">Wonder Woman<div></li>
+          <li class="item" id="item1"></li>
           <p class="desc1">Description</p>
           <div>
             <button class="edit" type="Edit">Edit</button>
-            <button class="delete" type="Delete">Delete</button>
+            <!-- <button class="delete" type="Delete">Delete</button> -->
           </div>
           <textarea class="item-title1" name="text" placeholder="Item"></textarea>
           <textarea class="item-descrip1" name="text" placeholder="Description"></textarea>
           <div>
             <input id="1" class="update" type="submit" value="Save">
           </div>
-          <li class="item2">Guardians of Galaxy</li>
+          <li class="item" id="item2"></li>
           <p class="desc2">Description</p>
           <div>
             <button class="edit" type="Edit">Edit</button>
-            <button class="delete" type="Delete">Delete</button>
+            <!-- <button class="delete" type="Delete">Delete</button> -->
           </div>
           <textarea class="item-title2" name="text" placeholder="Item"></textarea>
           <textarea class="item-descrip2" name="text" placeholder="Description"></textarea>
           <div>
             <input id="2" class="update" type="submit" value="Save">
           </div>
-          <li class="item3">Spiderman</li>
+          <li class="item" id="item3"></li>
           <p class="desc3">Description</p>
           <div>
             <button class="edit" type="Edit">Edit</button>
-            <button class="delete" type="Delete">Delete</button>
+            <!-- <button class="delete" type="Delete">Delete</button> -->
           </div>
           <textarea class="item-title3" name="text" placeholder="Item"></textarea>
           <textarea class="item-descrip3" name="text" placeholder="Description"></textarea>
@@ -74,7 +74,7 @@
       </div>
     </div>
   </div>
-  <div class="row text-center">
+  <!-- <div class="row text-center">
     <div class="col-md-12">
       <div >
         <button id="create-new" type="submit">New</button>
@@ -89,7 +89,7 @@
         <input type="submit" value="Save">
       </div>
     </div>
-  </div>
+  </div> -->
 </body>
 
 </html>

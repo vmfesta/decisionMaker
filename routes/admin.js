@@ -11,38 +11,35 @@ module.exports = knex => {
     let decisionDesc;
     let optionsTitle = [];
     let optionsDesc = [];
-
+    let info = {
+      decisionId,
+      decisionTitle,
+      optionsTitle: [],
+      optionsDesc: []
+    };
     knex
       .select()
       .from("decisions")
       .whereRaw(`adm_link = '${adminLink}'`)
       .then(result => {
-        decisionId = result[0].id;
-        decisionTitle = result[0].title;
-        decisionDesc = result[0].description;
+        info.decisionId = result[0].id;
+        info.decisionTitle = result[0].title;
       })
       .then(() => {
         knex
           .select()
           .from("pool")
-          .whereRaw(`decision_id = '${decisionId}'`)
+          .whereRaw(`decision_id = '${info.decisionId}'`)
           .then(result => {
             for (var i = 0; i < result.length; i++) {
-              optionsTitle.push(result[i].option_description);
-              optionsDesc.push(result[i].option_description);
+              info.optionsTitle.push(result[i].option_title);
+              info.optionsDesc.push(result[i].option_description);
             }
+          })
+          .then(() => {
+            console.log(info);
+            res.send(info);
           });
-      })
-      .then(() => {
-        let info = {
-          decisionId,
-          decisionTitle,
-          decisionDesc,
-          optionsTitle,
-          optionsDesc
-        };
-        console.log(Date.now);
-        return info;
       });
   });
 
@@ -53,5 +50,25 @@ module.exports = knex => {
     res.render("admin", templateVars);
   });
 
+  router.post("/update/:data" , (req, res) => {
+    let params = req.params.data.split(",");
+    console.log(params);
+    knex()
+      .select("id")
+      .from("decisions")
+      .whereRaw(`adm_link = '${params[0]}'`)
+    .then((result) => {
+      console.log(result);
+      knex("pool")
+        .whereRaw(`decision_id = ${result[0].id} and option_title = '${params[3]}' and option_description = '${params[4]}'`)
+        .update({
+          option_title: params[1],
+          option_description: params[2],
+          thisKeyIsSkypped:undefined
+        }).then(count => {
+          console.log("done"); 
+        })
+    });
+  });
   return router;
 };
