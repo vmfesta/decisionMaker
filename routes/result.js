@@ -13,7 +13,6 @@ module.exports = knex => {
   });
 
   router.get("/data/:id", (req, res) => {
-    console.log("aqui");
     const adminLink = req.params.id;
     let decisionId;
     let decisionTitle;
@@ -58,7 +57,6 @@ module.exports = knex => {
       .from("votes")
       .whereRaw(`decision_id = ${req.params.id}`)
       .then(result => {
-        console.log(result);
         res.send(result);
       });
   });
@@ -69,7 +67,6 @@ module.exports = knex => {
       .from("votes")
       .whereRaw(`decision_id = ${req.params.id}`)
       .then(result => {
-        console.log(result);
         res.send(result);
       });
   });

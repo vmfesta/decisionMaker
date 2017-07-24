@@ -1,7 +1,3 @@
-
-//var borda = require( path.resolve( __dirname, "./borda-count.js" ) );
-
-
 let id;
 let countVotes = {};
 let options;
